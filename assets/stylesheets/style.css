@@ -32,7 +32,7 @@ header {
 }
 
 header h1 {
-  position: absolute;
+  position: static;
   top: 72px; 
   left: 50px;
   color: #fff;
