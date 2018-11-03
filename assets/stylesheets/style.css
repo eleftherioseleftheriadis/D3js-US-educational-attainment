@@ -234,7 +234,7 @@ polyline{
 }
 
 form {
-    text-align: center;
+    text-align: static;
     margin-top: 30px;
 }
 
