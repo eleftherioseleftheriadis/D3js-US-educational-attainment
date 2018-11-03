@@ -27,19 +27,19 @@
 
 header {
   height:36px;
-  position: static; //diko mo
+  position: static; /*diko mo */
   z-index:10;
 }
 
 header h1 {
-  position: static; //absolut
+  position: static; /*absolut*/
   top: 72px; 
   left: 50px;
   color: #fff;
 }
 
 .fixed-header {
-  position: static; //fixed
+  position: static; /*fixed*/
   top:0; left:0;
   width: 100%; 
 }
