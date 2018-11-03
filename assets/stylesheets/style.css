@@ -189,12 +189,13 @@ polyline{
 
 #pie-chart {
     display: block;
-    position: fixed;
+    position: static;
     margin: 0 auto;
 }
 
 #treemap {
     display: block;
+    position:static;
     margin: 0 auto;
 }
 
