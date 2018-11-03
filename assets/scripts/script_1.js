@@ -17,7 +17,7 @@ var donut = donutChart()
     });
 
 function donutChart() {
-    var width = divWidth,
+    var width,
         height,
         margin = {top: 10, right: 10, bottom: 10, left: 10},
         colour = d3.scaleOrdinal().range(["#99ffb9", "#99b3ff", "#ffff99", "#9999ff", "#ff99e6", "#adebeb", "#cc99ff"]),
