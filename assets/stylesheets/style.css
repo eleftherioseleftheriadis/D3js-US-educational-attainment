@@ -27,6 +27,7 @@
 
 header {
   height:36px;
+  position: static;
   z-index:10;
 }
 
