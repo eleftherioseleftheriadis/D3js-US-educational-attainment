@@ -189,6 +189,7 @@ polyline{
 
 #pie-chart {
     display: block;
+    position: fixed;
     margin: 0 auto;
 }
 
@@ -199,6 +200,7 @@ polyline{
 
 #stacked-bar-chart {
     display: block;
+    position: static;
     margin: 0 auto;
 }
 
