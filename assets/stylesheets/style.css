@@ -238,11 +238,14 @@ polyline{
 
 form {
     text-align: center;
-    width: 100%;
-    margin-top: auto;
+    margin-top: 30px;
 }
 
 #tree-form {
+	text-allign:center;
+	width: 100%;
+	margin: auto;
+	
 
 }
 
