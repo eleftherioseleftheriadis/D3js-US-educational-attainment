@@ -12,12 +12,12 @@
     --body-text-color: rgba(35,31,32, 0.87);
     --heading-font: "Gill Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --heading-weight: 700;
-    --body-font: ;
-    --body-font-italic: ;
-    --code-font: ;
+    --body-font: Arial;
+    --body-font-italic: Arial;
+    --code-font: sans-serif;
 }
 
-* {
+{
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -26,12 +26,13 @@
 
 
 header {
-  height: 36px;
+  height:36px;
   z-index:10;
 }
 
+
 header h1 {
-  position: absolut; 
+  position: absolute;
   top: 72px; 
   left: 50px;
   color: #fff;
@@ -39,11 +40,11 @@ header h1 {
 
 .fixed-header {
   position: fixed;
-  top:0; left:0;
+  top:0;
+  left:0;
   width: 100%; 
-  float: left;
   margin: 0 auto;
-	
+  float: left;
 }
 
 nav {
@@ -89,11 +90,9 @@ label{
 
 .radio-toolbar input[type="radio"] {
   display: none;
-    
 }
 
 .radio-toolbar label {
-
   display: inline-block;
   background-color: #FF0000;
   padding: 4px 11px;
@@ -101,13 +100,11 @@ label{
   font-size: 16px;
   cursor: crosshair;
   border-style: groove;
-}T
-
-.radio-toolbar input[type="radio"]:checked+label {
-  background-color: #ffffff;
 }
 
-
+.radio-toolbar input[type="radio"]:checked+label {
+  background-color: #bbb;
+}
 
 a, a:visited, a:hover {
 	text-decoration: none;
@@ -120,7 +117,7 @@ textarea, input {
 }
 
 textarea:focus, input:focus {
-	border-color: none;
+  border-color: none;
 }
 
 textarea:focus, input:focus, button:focus, button {
@@ -128,7 +125,7 @@ textarea:focus, input:focus, button:focus, button {
 }
 
 button {
-	border: none;
+  border: none;
 }
 
 .arc text {
@@ -185,26 +182,54 @@ polyline{
 }
 
 /* In biology we generally italicise species names. */
-.labelName {
-    font-size: 0.9em;
-    font-style: italic;
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  	.labelName {
+	    font-size: 0.9em;
+	    font-style: italic;
+	}
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+   	.labelName {
+	    font-size: 0.9em;
+	    font-style: italic;
+	} 
+}
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.labelName {
+	    font-size: 1.5em;
+	    font-style: italic;
+	}  
 }
 
 #pie-chart {
     display: block;
-    position: static;
     margin: 0 auto;
 }
 
 #treemap {
     display: block;
-    position:static;
     margin: 0 auto;
 }
 
 #stacked-bar-chart {
     display: block;
-    position: static;
     margin: 0 auto;
 }
 
@@ -258,6 +283,10 @@ form {
     font-weight: 100;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
 
     #chart {
 	  max-width: 100%;
