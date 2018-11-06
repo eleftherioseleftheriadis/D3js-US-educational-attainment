@@ -181,12 +181,7 @@ polyline{
     font-weight: 700;
 }
 
-/* In biology we generally italicise species names. */
 
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
 
 @media (min-width: 1281px) {
   	.labelName {
@@ -195,10 +190,7 @@ polyline{
 	}
 }
 
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
+
 
 @media (min-width: 1025px) and (max-width: 1280px) {
    	.labelName {
@@ -206,10 +198,7 @@ polyline{
 	    font-style: italic;
 	} 
 }
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
+
 
 @media (min-width: 320px) and (max-width: 480px) {
 	.labelName {
@@ -313,7 +302,7 @@ form {
 	}
 	.children rect.parent,
 	.grandparent rect {
-	  cursor: pointer;
+	  cursor: crosshair;
 	}
 
     .children text.parent,
