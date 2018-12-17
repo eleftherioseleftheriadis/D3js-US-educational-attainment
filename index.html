@@ -15,6 +15,7 @@
   <header>
        <nav>
     <ul>
+      <li><a href="D3jsGraphs.html" onmouseover="playclip();">D3jsGraphs</a></li>
       <li><a href="#top" onmouseover="playclip();" >Top</a></li>
       <li><a href="#national" onmouseover="playclip();">National</a></li>
       <li><a href="#regional" onmouseover="playclip();">Regional</a></li>
@@ -24,6 +25,12 @@
     </header>
 	 
 <body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript">
+	$(window).on('resize', function(){
+           var win = $(this); 
+           if (win.width() > 800) 
+        });
     <a name="national"></a>
     <h1 class="title" onmouseover="responsiveVoice.speak('Educational Attainment in the United States');" onmouseleave="responsiveVoice.cancel();">Educational Attainment in the United States</h1>
     <br>
@@ -90,7 +97,19 @@
    /*  
 	       <meta name="viewport" content="width=device-width, initial-scale=1.0"> den doulevi den ksero giati!!
 	*/
-	      
+function maskandshow(id){
+        if (document.getElementById) {
+          var divid = document.getElementById(id);
+          var divs = document.getElementsByClassName("mask");
+          for(var i=0;i<divs.length;i++) {
+            divs[i].style.display = "none";
+          }
+          divid.style.display = "block";
+        } 
+        return false;
+ }
+     document.getElementById("reg").style.display = "none";
+     document.getElementById("stl").style.display = "none";	      
 </script>
 	<audio>
 <source src="Mouse Click Fast (online-audio-converter.com).mp3"></source>
