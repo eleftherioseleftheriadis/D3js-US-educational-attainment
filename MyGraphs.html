@@ -13,12 +13,12 @@
 </head>
   <header>
        <nav>
-    <ul>
+    <ul id="nav">
       <li><a href="index.html" onmouseover="playclip();">Back</a></li>
       <li><a href="#top"  onmouseover="playclip();" >Top</a></li>
-      <li><a href="#Graph1"onclick="maskandshow('national');" onmouseover="playclip();">Graph1</a></li>
-      <li><a href="#Graph2"onclick="maskandshow('regional');" onmouseover="playclip();">Graph2</a></li>
-      <li><a href="#Graph3"onclick="maskandshow('state');" onmouseover="playclip();">Graph3</a></li>
+      <li><a href="#Graph1"onclick="maskandshow('Graph1');" onmouseover="playclip();">Graph1</a></li>
+      <li><a href="#Graph2"onclick="maskandshow('Graph2');" onmouseover="playclip();">Graph2</a></li>
+      <li><a href="#Graph3"onclick="maskandshow('Graph3');" onmouseover="playclip();">Graph3</a></li>
     <ul>
         </nav>
     </header>
@@ -114,8 +114,8 @@ function maskandshow(id){
         } 
         return false;
  }
-     document.getElementById("regional").style.display = "none";
-     document.getElementById("state").style.display = "none";	      
+     document.getElementById("Graph2").style.display = "none";
+     document.getElementById("Graph3").style.display = "none";	      
 </script>
 	<audio>
 <source src="Mouse Click Fast (online-audio-converter.com).mp3"></source>
