@@ -17,9 +17,9 @@
     <ul>
       <li><a href="index.html" onmouseover="playclip();">Back</a></li>
       <li><a href="#top"  onmouseover="playclip();" >Top</a></li>
-      <li><a href="#national"onclick="maskandshow('national');" onmouseover="playclip();">National</a></li>
-      <li><a href="#regional"onclick="maskandshow('regional');" onmouseover="playclip();">Regional</a></li>
-      <li><a href="#state"onclick="maskandshow('state');" onmouseover="playclip();">State-Level</a></li>
+      <li><a href="#Graph1"onclick="maskandshow('national');" onmouseover="playclip();">Graph1</a></li>
+      <li><a href="#Graph2"onclick="maskandshow('regional');" onmouseover="playclip();">Graph2</a></li>
+      <li><a href="#Graph3"onclick="maskandshow('state');" onmouseover="playclip();">Graph3</a></li>
     <ul>
         </nav>
     </header>
@@ -32,25 +32,25 @@
            if (win.width() > 800) 
         });
 </script>	
-	<div class="mask" id="national">
-    <a name="national"></a>
-    <h1 class="title" onmouseover="responsiveVoice.speak('Educational Attainment in the United States');" onmouseleave="responsiveVoice.cancel();">Educational Attainment in the United States</h1>
+	<div class="mask" id="Graph1">
+    <a name="Graph1"></a>
+    <h1 class="title">Graph1</h1>
     
     
 		
     <br>
-    <h2 class="subtitle" onmouseover="responsiveVoice.speak('Nation-Wide Education Level of Population in Schooling');" onmouseleave="responsiveVoice.cancel();">Nation-Wide Education Level of Population in Schooling</h2>
+    <h2 class="subtitle">Graph2</h2>
 	
     <div class="container">
-	<svg id="pie-chart" onmouseover="responsiveVoice.speak('Pie Chart of Nation-Wide Education Level of Population in Schooling');" viewBox="0 0 960 450">
+	<svg id="pie-chart" viewBox="0 0 960 450">
 	</svg>
     </div>
-		<div class="mask" id="regional">
-    <a name="regional"></a>
+		<div class="mask" id="Graph2">
+    <a name="Graph2"></a>
 	
 		
     <br><br><br>
-    <h2 class="subtitle" onmouseover="responsiveVoice.speak('Educational Attainment: Region-level Breakdown of University Students');" onmouseleave="responsiveVoice.cancel();">Educational Attainment: Region-level Breakdown of University Students</h2>
+    <h2 class="subtitle">Graph3</h2>
 		
     <form id="tree-form">
         <div class="radio-toolbar">
@@ -65,14 +65,14 @@
         </div>
     </form>
 	<p></p>
-    <div id="chart"onmouseover="responsiveVoice.speak('Chart of Educational Attainment: Region-level Breakdown of University Students');" align="center"></div>
-	<div class="mask" id="state">
+    <div id="chart" align="center"></div>
+	<div class="mask" id="Graph3">
 
-	<a name="state"></a>
+	<a name="Graph3"></a>
 	
 
 <br><br>
-    <h2 class="subtitle" onmouseover="responsiveVoice.speak('Education Level of Population in Schooling: State-level Breakdown');" onmouseleave="responsiveVoice.cancel();">Education Level of Population in Schooling: State-level Breakdown</h2>
+    <h2 class="subtitle" >Graph3</h2>
 
     <form id="stack-form">
         <div class="radio-toolbar">
