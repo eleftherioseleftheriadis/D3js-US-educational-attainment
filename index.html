@@ -32,25 +32,25 @@
            if (win.width() > 800) 
         });
 </script>	
- <div class="mask" id="national">
+ 
     <a name="national"></a>
   
     <h1 class="title" onmouseover="responsiveVoice.speak('Educational Attainment in the United States');" onmouseleave="responsiveVoice.cancel();">Educational Attainment in the United States</h1>
     
     
-		
+<div class="mask" id="national">		
     <br>
     <h2 class="subtitle" onmouseover="responsiveVoice.speak('Nation-Wide Education Level of Population in Schooling');" onmouseleave="responsiveVoice.cancel();">Nation-Wide Education Level of Population in Schooling</h2>
 	
     <div class="container">
 	<svg id="pie-chart" onmouseover="responsiveVoice.speak('Pie Chart of Nation-Wide Education Level of Population in Schooling');" viewBox="0 0 960 450">
-	</svg>
+	</svg><a name="regional"></a>
     </div>
-		
-    <a name="regional"></a>
-		
+	</div>		
+    
+	<div class="mask" id="regional">	
     <br><br><br>
-<div class="mask" id="regional">
+
 	<h2 class="subtitle" onmouseover="responsiveVoice.speak('Educational Attainment: Region-level Breakdown of University Students');" onmouseleave="responsiveVoice.cancel();">Educational Attainment: Region-level Breakdown of University Students</h2>
 		
     <form id="tree-form">
@@ -67,11 +67,10 @@
     </form>
 	<p></p>
     <div id="chart"onmouseover="responsiveVoice.speak('Chart of Educational Attainment: Region-level Breakdown of University Students');" align="center"></div>
-	
+	</div>	
 
-	<a name="state"></a>
 	<div class="mask" id="state">
-
+	<a name="state"></a>
 <br><br>
     <h2 class="subtitle" onmouseover="responsiveVoice.speak('Education Level of Population in Schooling: State-level Breakdown');" onmouseleave="responsiveVoice.cancel();">Education Level of Population in Schooling: State-level Breakdown</h2>
 
@@ -86,7 +85,7 @@
 	<div>
         <svg id="stacked-bar-chart" onmouseover="responsiveVoice.speak('Stacked bar chart of Education Level of Population in Schooling: State-level Breakdown');" align="center"></svg>
     </div>
-
+	</div>
     
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
